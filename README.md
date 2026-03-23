@@ -4,10 +4,10 @@ A 4-bit Carry Lookahead Adder (CLA) built from scratch using dataflow and struct
 
 ### 📦 Technologies
 
-* **RTL Design:** Verilog / SystemVerilog
+* **RTL Design:** Verilog
 * **Architecture:** Dataflow Modeling, Parallel Logic
 * **Verification:** QuestaSim, ModelSim, Verilator (Linting)
-* **Environment & OS:** Linux (Ubuntu), VIM
+* **Environment & OS:** Linux, VIM
 * **Methodology:** Exhaustive Testing, Golden Model Self-Checking, Coverage-Driven Verification, Makefiles
 
 ### ⚙️ IP Features
@@ -42,7 +42,7 @@ The 4-bit CLA is designed with the following port interfaces and functional cons
 
 **3. Architecture Block Diagram:**
 <p align="center">
-  <img src=" KÉO THẢ ẢNH SƠ ĐỒ KHỐI 3 TẦNG VÀO ĐÂY " alt="CLA Architecture Block Diagram">
+  <img src="./images/4-Bit-Carry-Lookahead-Adder.drawio.png" alt="CLA Architecture Block Diagram">
 </p>
 
 ### 🦉 The Process
@@ -77,17 +77,17 @@ During this project, I significantly leveled up my IC design knowledge:
 
 1. **Simulation Regression Log**
 <p align="center">
-  <img src=" KÉO THẢ ẢNH LOG VÀO ĐÂY " alt="Terminal Log">
+  <img src="./images/waveform.png" alt="Terminal Log">
 </p>
 
 2. **Regression Test Report**
 <p align="center">
-  <img src=" KÉO THẢ ẢNH REPORT VÀO ĐÂY " alt="Regression Report">
+  <img src="./images/vplan_result.png" alt="Regression Report">
 </p>
 
 3. **Code Coverage Report (100%)**
 <p align="center">
-  <img src=" KÉO THẢ ẢNH COVERAGE VÀO ĐÂY " alt="Coverage Report">
+  <img src="./images/coverage.png" alt="Coverage Report">
 </p>
 
 ### 💭 How can it be improved?
