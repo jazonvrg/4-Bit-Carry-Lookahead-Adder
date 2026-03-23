@@ -9,15 +9,53 @@ R0
 R1
 R0
 R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
 Z2 !s12c _opt1
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R2
 R1
 R2
 R1
@@ -58,10 +96,10 @@ R1
 cModel Technology
 Z3 d/ictc/student_data/vannghia_1108/projects/4_bit_ripple_carry_adder/sim
 T_opt1
-!s110 1774253569
-V]WZlm97VE7NA8Ic0z=K][1
+!s110 1774275517
+V67D2iL6gM@k?jfhKRmZfc0
 Z4 04 10 4 work test_bench fast 0
-=1-bc2411209e67-69c0f601-65a87-18cdf
+=1-bc2411209e67-69c14bbc-e46f8-11e04
 R1
 Z5 !s12f OEM100
 Z6 !s12b OEM100
@@ -73,10 +111,10 @@ n@_opt1
 Z10 OL;O;2024.3;79
 R3
 T_opt2
-!s110 1774253940
-V4aKz=@4UDJZ=So3[0FLm<0
+!s110 1774275570
+V@e<M[M12500]7IzVGdQ:V3
 R4
-=1-bc2411209e67-69c0f774-2c01-a76f
+=1-bc2411209e67-69c14bf1-d856f-14404
 R1
 R5
 R6
@@ -86,9 +124,33 @@ o-quiet -auto_acc_if_foreign -work work -debugdb +access+cover=bcesft
 R9
 n@_opt2
 R10
+vcla_4bit
+Z11 2../rtl/cla_4bit.v|../tb/test_bench.v
+Z12 !s110 1774275568
+!i10b 1
+!s100 AmCj`LBKcC:Sh82:4CV371
+I_2ThDAE6b9;ZYnFTd1b<S0
+Z13 d/ictc/student_data/vannghia_1108/projects/4_bit_carry_lookahead_adder/sim
+w1774275430
+8../rtl/cla_4bit.v
+F../rtl/cla_4bit.v
+!i122 44
+L0 1 36
+Z14 VDg1SIo80bB@j0V0VzS_@n1
+Z15 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z16 !s108 1774275568.000000
+Z17 !s107 run_test.v|../tb/test_bench.v|../rtl/cla_4bit.v|
+Z18 !s90 +cover=bcesft|-f|compile.f|
+!i113 0
+Z19 !s102 +cover=bcesft
+Z20 o+cover=bcesft -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R9
 vfull_adder
-Z11 2../rtl/full_adder.v|../rtl/rca_4bit.v|../tb/test_bench.v
-Z12 !s110 1774253939
+Z21 2../rtl/full_adder.v|../rtl/rca_4bit.v|../tb/test_bench.v
+Z22 !s110 1774256094
 !i10b 1
 !s100 @6GWzOMfD[XL;?4e_bc401
 IeSaCb5ah]Tden;J@HBI>Y1
@@ -96,23 +158,23 @@ R3
 w1774253560
 8../rtl/full_adder.v
 F../rtl/full_adder.v
-!i122 25
+!i122 34
 L0 1 12
-Z13 VDg1SIo80bB@j0V0VzS_@n1
-Z14 OL;L;2024.3;79
+R14
+R15
 r1
 !s85 0
 31
-Z15 !s108 1774253939.000000
-Z16 !s107 run_test.v|../tb/test_bench.v|../rtl/rca_4bit.v|../rtl/full_adder.v|
-Z17 !s90 +cover=bcesft|-f|compile.f|
+Z23 !s108 1774256094.000000
+Z24 !s107 run_test.v|../tb/test_bench.v|../rtl/rca_4bit.v|../rtl/full_adder.v|
+R18
 !i113 0
-Z18 !s102 +cover=bcesft
-Z19 o+cover=bcesft -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R19
+R20
 R9
 vrca_4bit
-R11
-R12
+R21
+R22
 !i10b 1
 !s100 hnL;9T`c_N2RlkLMC?PYc0
 IA^RN4lKL:3RoUQkn3@i;b1
@@ -120,19 +182,19 @@ R3
 w1774253151
 8../rtl/rca_4bit.v
 F../rtl/rca_4bit.v
-!i122 25
+!i122 34
 L0 1 22
-R13
 R14
+R15
 r1
 !s85 0
 31
-R15
-R16
-R17
-!i113 0
+R23
+R24
 R18
+!i113 0
 R19
+R20
 R9
 vtest_bench
 R11
@@ -140,22 +202,22 @@ R12
 !i10b 1
 !s100 GSf[DlkLJL`ZI83_b]OfU2
 ICl[iG5^`kYFaN>Pm28JW^3
-R3
-w1774253938
+R13
+w1774275568
 8../tb/test_bench.v
 F../tb/test_bench.v
 Frun_test.v
-!i122 25
+!i122 44
 L0 1 70
-R13
 R14
+R15
 r1
 !s85 0
 31
-R15
 R16
 R17
-!i113 0
 R18
+!i113 0
 R19
+R20
 R9

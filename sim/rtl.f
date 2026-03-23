@@ -1,2 +1,1 @@
-../rtl/full_adder.v
-../rtl/rca_4bit.v
+../rtl/cla_4bit.v

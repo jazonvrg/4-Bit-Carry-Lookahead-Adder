@@ -1,11 +1,11 @@
 Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
-Start time: 15:12:48 on Mar 23,2026
+Start time: 21:18:35 on Mar 23,2026
 vlog -f compile.f 
--- Compiling module full_adder
--- Compiling module rca_4bit
+-- Compiling module cla_4bit
 -- Compiling module test_bench
 
 Top level modules:
+	cla_4bit
 	test_bench
-End time: 15:12:48 on Mar 23,2026, Elapsed time: 0:00:00
+End time: 21:18:36 on Mar 23,2026, Elapsed time: 0:00:01
 Errors: 0, Warnings: 0

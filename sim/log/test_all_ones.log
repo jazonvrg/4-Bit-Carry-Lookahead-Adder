@@ -1,5 +1,5 @@
 # vsim -debugDB -coverage -l test_all_ones.log -c test_bench -voptargs="+access+cover=bcesft" -assertdebug -do "coverage save -onexit test_all_ones.ucdb; log -r /*;run -all" 
-# Start time: 15:18:56 on Mar 23,2026
+# Start time: 21:19:26 on Mar 23,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vsim-8611) Generating debug db.
 # ** Warning: (vopt-4308) Enabling visibility using +acc is recommended with debug flow.
@@ -37,5 +37,5 @@
 # ** Note: $finish    : ../tb/test_bench.v(19)
 #    Time: 126 ns  Iteration: 0  Instance: /test_bench
 # Saving coverage database on exit...
-# End time: 15:18:57 on Mar 23,2026, Elapsed time: 0:00:01
+# End time: 21:19:26 on Mar 23,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
