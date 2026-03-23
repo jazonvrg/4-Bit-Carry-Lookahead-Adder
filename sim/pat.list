@@ -1,0 +1,4 @@
+test_all_zeros
+test_all_ones
+test_carry_prop
+test_exhaustive

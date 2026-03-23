@@ -1,0 +1,64 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /test_bench/top_dut/gen_adder_loop[3]/fa_dut
+=== Design Unit: work.full_adder
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      6         6         0   100.00%
+    Statements                       2         2         0   100.00%
+    Toggles                         10        10         0   100.00%
+
+=================================================================================
+=== Instance: /test_bench/top_dut/gen_adder_loop[2]/fa_dut
+=== Design Unit: work.full_adder
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      6         6         0   100.00%
+    Statements                       2         2         0   100.00%
+    Toggles                         10        10         0   100.00%
+
+=================================================================================
+=== Instance: /test_bench/top_dut/gen_adder_loop[1]/fa_dut
+=== Design Unit: work.full_adder
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      6         6         0   100.00%
+    Statements                       2         2         0   100.00%
+    Toggles                         10        10         0   100.00%
+
+=================================================================================
+=== Instance: /test_bench/top_dut/gen_adder_loop[0]/fa_dut
+=== Design Unit: work.full_adder
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      6         6         0   100.00%
+    Statements                       2         2         0   100.00%
+    Toggles                         10        10         0   100.00%
+
+=================================================================================
+=== Instance: /test_bench/top_dut
+=== Design Unit: work.rca_4bit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         38        38         0   100.00%
+
+=================================================================================
+=== Instance: /test_bench
+=== Design Unit: work.test_bench
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         5         5    50.00%
+    Conditions                       5         0         5     0.00%
+    Statements                      37        34         3    91.89%
+    Toggles                        284        49       235    17.25%
+
+
+Total Coverage By Instance (filtered view): 53.60%
+

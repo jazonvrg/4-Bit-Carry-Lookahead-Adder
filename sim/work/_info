@@ -1,0 +1,161 @@
+m255
+K4
+z2
+Z0 !s12c _opt2
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt1
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 d/ictc/student_data/vannghia_1108/projects/4_bit_ripple_carry_adder/sim
+T_opt1
+!s110 1774253569
+V]WZlm97VE7NA8Ic0z=K][1
+Z4 04 10 4 work test_bench fast 0
+=1-bc2411209e67-69c0f601-65a87-18cdf
+R1
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM10U6 
+Z8 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work -debugdb +access
+Z9 tCvgOpt 0
+n@_opt1
+Z10 OL;O;2024.3;79
+R3
+T_opt2
+!s110 1774253940
+V4aKz=@4UDJZ=So3[0FLm<0
+R4
+=1-bc2411209e67-69c0f774-2c01-a76f
+R1
+R5
+R6
+R7
+R8
+o-quiet -auto_acc_if_foreign -work work -debugdb +access+cover=bcesft
+R9
+n@_opt2
+R10
+vfull_adder
+Z11 2../rtl/full_adder.v|../rtl/rca_4bit.v|../tb/test_bench.v
+Z12 !s110 1774253939
+!i10b 1
+!s100 @6GWzOMfD[XL;?4e_bc401
+IeSaCb5ah]Tden;J@HBI>Y1
+R3
+w1774253560
+8../rtl/full_adder.v
+F../rtl/full_adder.v
+!i122 25
+L0 1 12
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z15 !s108 1774253939.000000
+Z16 !s107 run_test.v|../tb/test_bench.v|../rtl/rca_4bit.v|../rtl/full_adder.v|
+Z17 !s90 +cover=bcesft|-f|compile.f|
+!i113 0
+Z18 !s102 +cover=bcesft
+Z19 o+cover=bcesft -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R9
+vrca_4bit
+R11
+R12
+!i10b 1
+!s100 hnL;9T`c_N2RlkLMC?PYc0
+IA^RN4lKL:3RoUQkn3@i;b1
+R3
+w1774253151
+8../rtl/rca_4bit.v
+F../rtl/rca_4bit.v
+!i122 25
+L0 1 22
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R19
+R9
+vtest_bench
+R11
+R12
+!i10b 1
+!s100 GSf[DlkLJL`ZI83_b]OfU2
+ICl[iG5^`kYFaN>Pm28JW^3
+R3
+w1774253938
+8../tb/test_bench.v
+F../tb/test_bench.v
+Frun_test.v
+!i122 25
+L0 1 70
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R19
+R9

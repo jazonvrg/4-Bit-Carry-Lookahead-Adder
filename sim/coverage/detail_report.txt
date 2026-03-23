@@ -1,0 +1,181 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /test_bench
+=== Design Unit: work.test_bench
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         5         5    50.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /test_bench
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../tb/test_bench.v
+------------------------------------IF Branch------------------------------------
+    26                                      1031     Count coming in to IF
+    26              1                       1031     			if (data == cp) begin
+    29              1                    ***0***     			else begin
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File run_test.v
+------------------------------------IF Branch------------------------------------
+    16                                         2     Count coming in to IF
+    16              1                    ***0***     					#1;		
+    18              1                          2     					comp({cout, sum}, a + b + cin);
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    17                                         4     Count coming in to IF
+    17              1                    ***0***     					$display("	CASE: a = %b, b = %b, cin = %b", a, b, cin);
+    19              1                          4     				end
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                         1     Count coming in to IF
+    23              1                    ***0***     		b = 4'd0;
+    25              1                          1     		#1;		
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    29                                         1     Count coming in to IF
+    29              1                    ***0***             	if (err != 0)
+    31              1                          1      	       	else
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       5         0         5     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /test_bench --
+
+  File ../tb/test_bench.v
+----------------Focused Condition View-------------------
+Line       26 Item    1  (data == cp)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+    Input Term   Covered  Reason for no coverage   Hint
+   -----------  --------  -----------------------  --------------
+  (data == cp)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (data == cp)_0        -                             
+  Row   2:          8  (data == cp)_1        -                             
+
+
+----------------Focused Condition View-------------------
+Line       16 Item    1  (err != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+  (err != 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          2  (err != 0)_0          -                             
+  Row   2:    ***0***  (err != 0)_1          -                             
+
+----------------Focused Condition View-------------------
+Line       17 Item    1  (err != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+  (err != 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          4  (err != 0)_0          -                             
+  Row   2:    ***0***  (err != 0)_1          -                             
+
+----------------Focused Condition View-------------------
+Line       23 Item    1  (err != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+  (err != 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (err != 0)_0          -                             
+  Row   2:    ***0***  (err != 0)_1          -                             
+
+----------------Focused Condition View-------------------
+Line       29 Item    1  (err != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+  (err != 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (err != 0)_0          -                             
+  Row   2:    ***0***  (err != 0)_1          -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      37        34         3    91.89%
+
+================================Statement Details================================
+
+Statement Coverage for instance /test_bench --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../tb/test_bench.v
+    30              1     				$display("t = %t. FAILED. Exp: %b, Act: %b", $time, cp, data);
+    31              1     				err = err + 1;
+  File run_test.v
+    30              1        	        	$display("Test result FAILED");
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        284        49       235    17.25%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /test_bench --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                            a[0-2]           2           2      100.00 
+                                              a[3]           1           2      100.00 
+                                            b[0-3]           2           2      100.00 
+                                               cin           2           2      100.00 
+                                              cout           2           2      100.00 
+                                         err[0-31]           0           0        0.00 
+                                            i[0-3]           2           2      100.00 
+                                              i[4]           0           2       50.00 
+                                           i[5-31]           0           0        0.00 
+                                            j[0-3]           2           2      100.00 
+                                              j[4]           0           2       50.00 
+                                           j[5-31]           0           0        0.00 
+                                              k[0]           2           2      100.00 
+                                              k[1]           0           2       50.00 
+                                           k[2-31]           0           0        0.00 
+                                          sum[0-3]           2           2      100.00 
+
+Total Node Count     =        142 
+Toggled Node Count   =         23 
+Untoggled Node Count =        119 
+
+Toggle Coverage      =      17.25% (49 of 284 bins)
+
+
+Total Coverage By Instance (filtered view): 35.36%
+

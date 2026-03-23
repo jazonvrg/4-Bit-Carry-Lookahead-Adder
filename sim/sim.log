@@ -1,0 +1,1065 @@
+# vsim -debugDB -coverage -l test_exhaustive.log -c test_bench -voptargs="+access+cover=bcesft" -assertdebug -do "coverage save -onexit test_exhaustive.ucdb; log -r /*;run -all" 
+# Start time: 15:18:59 on Mar 23,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-4308) Enabling visibility using +acc is recommended with debug flow.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# Loading work.rca_4bit(fast)
+# Loading work.full_adder(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# coverage save -onexit test_exhaustive.ucdb
+#  log -r /*
+# run -all
+# ===========================================================================
+# ======================= TEST NAME : test_exhaustive =======================
+# ===========================================================================
+# ITEM: Brute-force check
+# ----------------------------------------------------------------------------------------------------------------------
+# 	CASE: a = 0000, b = 0000, cin = 0
+# t =                   26. PASSED. Exp: 00000, Act: 00000
+# 	CASE: a = 0000, b = 0000, cin = 1
+# t =                   27. PASSED. Exp: 00001, Act: 00001
+# 	CASE: a = 0000, b = 0001, cin = 0
+# t =                   28. PASSED. Exp: 00001, Act: 00001
+# 	CASE: a = 0000, b = 0001, cin = 1
+# t =                   29. PASSED. Exp: 00010, Act: 00010
+# 	CASE: a = 0000, b = 0010, cin = 0
+# t =                   30. PASSED. Exp: 00010, Act: 00010
+# 	CASE: a = 0000, b = 0010, cin = 1
+# t =                   31. PASSED. Exp: 00011, Act: 00011
+# 	CASE: a = 0000, b = 0011, cin = 0
+# t =                   32. PASSED. Exp: 00011, Act: 00011
+# 	CASE: a = 0000, b = 0011, cin = 1
+# t =                   33. PASSED. Exp: 00100, Act: 00100
+# 	CASE: a = 0000, b = 0100, cin = 0
+# t =                   34. PASSED. Exp: 00100, Act: 00100
+# 	CASE: a = 0000, b = 0100, cin = 1
+# t =                   35. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0000, b = 0101, cin = 0
+# t =                   36. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0000, b = 0101, cin = 1
+# t =                   37. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0000, b = 0110, cin = 0
+# t =                   38. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0000, b = 0110, cin = 1
+# t =                   39. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0000, b = 0111, cin = 0
+# t =                   40. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0000, b = 0111, cin = 1
+# t =                   41. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0000, b = 1000, cin = 0
+# t =                   42. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0000, b = 1000, cin = 1
+# t =                   43. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0000, b = 1001, cin = 0
+# t =                   44. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0000, b = 1001, cin = 1
+# t =                   45. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0000, b = 1010, cin = 0
+# t =                   46. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0000, b = 1010, cin = 1
+# t =                   47. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0000, b = 1011, cin = 0
+# t =                   48. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0000, b = 1011, cin = 1
+# t =                   49. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0000, b = 1100, cin = 0
+# t =                   50. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0000, b = 1100, cin = 1
+# t =                   51. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0000, b = 1101, cin = 0
+# t =                   52. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0000, b = 1101, cin = 1
+# t =                   53. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0000, b = 1110, cin = 0
+# t =                   54. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0000, b = 1110, cin = 1
+# t =                   55. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0000, b = 1111, cin = 0
+# t =                   56. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0000, b = 1111, cin = 1
+# t =                   57. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0001, b = 0000, cin = 0
+# t =                   58. PASSED. Exp: 00001, Act: 00001
+# 	CASE: a = 0001, b = 0000, cin = 1
+# t =                   59. PASSED. Exp: 00010, Act: 00010
+# 	CASE: a = 0001, b = 0001, cin = 0
+# t =                   60. PASSED. Exp: 00010, Act: 00010
+# 	CASE: a = 0001, b = 0001, cin = 1
+# t =                   61. PASSED. Exp: 00011, Act: 00011
+# 	CASE: a = 0001, b = 0010, cin = 0
+# t =                   62. PASSED. Exp: 00011, Act: 00011
+# 	CASE: a = 0001, b = 0010, cin = 1
+# t =                   63. PASSED. Exp: 00100, Act: 00100
+# 	CASE: a = 0001, b = 0011, cin = 0
+# t =                   64. PASSED. Exp: 00100, Act: 00100
+# 	CASE: a = 0001, b = 0011, cin = 1
+# t =                   65. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0001, b = 0100, cin = 0
+# t =                   66. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0001, b = 0100, cin = 1
+# t =                   67. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0001, b = 0101, cin = 0
+# t =                   68. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0001, b = 0101, cin = 1
+# t =                   69. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0001, b = 0110, cin = 0
+# t =                   70. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0001, b = 0110, cin = 1
+# t =                   71. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0001, b = 0111, cin = 0
+# t =                   72. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0001, b = 0111, cin = 1
+# t =                   73. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0001, b = 1000, cin = 0
+# t =                   74. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0001, b = 1000, cin = 1
+# t =                   75. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0001, b = 1001, cin = 0
+# t =                   76. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0001, b = 1001, cin = 1
+# t =                   77. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0001, b = 1010, cin = 0
+# t =                   78. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0001, b = 1010, cin = 1
+# t =                   79. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0001, b = 1011, cin = 0
+# t =                   80. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0001, b = 1011, cin = 1
+# t =                   81. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0001, b = 1100, cin = 0
+# t =                   82. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0001, b = 1100, cin = 1
+# t =                   83. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0001, b = 1101, cin = 0
+# t =                   84. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0001, b = 1101, cin = 1
+# t =                   85. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0001, b = 1110, cin = 0
+# t =                   86. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0001, b = 1110, cin = 1
+# t =                   87. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0001, b = 1111, cin = 0
+# t =                   88. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0001, b = 1111, cin = 1
+# t =                   89. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0010, b = 0000, cin = 0
+# t =                   90. PASSED. Exp: 00010, Act: 00010
+# 	CASE: a = 0010, b = 0000, cin = 1
+# t =                   91. PASSED. Exp: 00011, Act: 00011
+# 	CASE: a = 0010, b = 0001, cin = 0
+# t =                   92. PASSED. Exp: 00011, Act: 00011
+# 	CASE: a = 0010, b = 0001, cin = 1
+# t =                   93. PASSED. Exp: 00100, Act: 00100
+# 	CASE: a = 0010, b = 0010, cin = 0
+# t =                   94. PASSED. Exp: 00100, Act: 00100
+# 	CASE: a = 0010, b = 0010, cin = 1
+# t =                   95. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0010, b = 0011, cin = 0
+# t =                   96. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0010, b = 0011, cin = 1
+# t =                   97. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0010, b = 0100, cin = 0
+# t =                   98. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0010, b = 0100, cin = 1
+# t =                   99. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0010, b = 0101, cin = 0
+# t =                  100. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0010, b = 0101, cin = 1
+# t =                  101. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0010, b = 0110, cin = 0
+# t =                  102. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0010, b = 0110, cin = 1
+# t =                  103. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0010, b = 0111, cin = 0
+# t =                  104. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0010, b = 0111, cin = 1
+# t =                  105. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0010, b = 1000, cin = 0
+# t =                  106. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0010, b = 1000, cin = 1
+# t =                  107. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0010, b = 1001, cin = 0
+# t =                  108. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0010, b = 1001, cin = 1
+# t =                  109. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0010, b = 1010, cin = 0
+# t =                  110. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0010, b = 1010, cin = 1
+# t =                  111. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0010, b = 1011, cin = 0
+# t =                  112. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0010, b = 1011, cin = 1
+# t =                  113. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0010, b = 1100, cin = 0
+# t =                  114. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0010, b = 1100, cin = 1
+# t =                  115. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0010, b = 1101, cin = 0
+# t =                  116. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0010, b = 1101, cin = 1
+# t =                  117. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0010, b = 1110, cin = 0
+# t =                  118. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0010, b = 1110, cin = 1
+# t =                  119. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0010, b = 1111, cin = 0
+# t =                  120. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0010, b = 1111, cin = 1
+# t =                  121. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0011, b = 0000, cin = 0
+# t =                  122. PASSED. Exp: 00011, Act: 00011
+# 	CASE: a = 0011, b = 0000, cin = 1
+# t =                  123. PASSED. Exp: 00100, Act: 00100
+# 	CASE: a = 0011, b = 0001, cin = 0
+# t =                  124. PASSED. Exp: 00100, Act: 00100
+# 	CASE: a = 0011, b = 0001, cin = 1
+# t =                  125. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0011, b = 0010, cin = 0
+# t =                  126. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0011, b = 0010, cin = 1
+# t =                  127. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0011, b = 0011, cin = 0
+# t =                  128. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0011, b = 0011, cin = 1
+# t =                  129. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0011, b = 0100, cin = 0
+# t =                  130. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0011, b = 0100, cin = 1
+# t =                  131. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0011, b = 0101, cin = 0
+# t =                  132. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0011, b = 0101, cin = 1
+# t =                  133. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0011, b = 0110, cin = 0
+# t =                  134. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0011, b = 0110, cin = 1
+# t =                  135. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0011, b = 0111, cin = 0
+# t =                  136. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0011, b = 0111, cin = 1
+# t =                  137. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0011, b = 1000, cin = 0
+# t =                  138. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0011, b = 1000, cin = 1
+# t =                  139. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0011, b = 1001, cin = 0
+# t =                  140. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0011, b = 1001, cin = 1
+# t =                  141. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0011, b = 1010, cin = 0
+# t =                  142. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0011, b = 1010, cin = 1
+# t =                  143. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0011, b = 1011, cin = 0
+# t =                  144. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0011, b = 1011, cin = 1
+# t =                  145. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0011, b = 1100, cin = 0
+# t =                  146. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0011, b = 1100, cin = 1
+# t =                  147. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0011, b = 1101, cin = 0
+# t =                  148. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0011, b = 1101, cin = 1
+# t =                  149. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0011, b = 1110, cin = 0
+# t =                  150. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0011, b = 1110, cin = 1
+# t =                  151. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0011, b = 1111, cin = 0
+# t =                  152. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0011, b = 1111, cin = 1
+# t =                  153. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 0100, b = 0000, cin = 0
+# t =                  154. PASSED. Exp: 00100, Act: 00100
+# 	CASE: a = 0100, b = 0000, cin = 1
+# t =                  155. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0100, b = 0001, cin = 0
+# t =                  156. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0100, b = 0001, cin = 1
+# t =                  157. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0100, b = 0010, cin = 0
+# t =                  158. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0100, b = 0010, cin = 1
+# t =                  159. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0100, b = 0011, cin = 0
+# t =                  160. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0100, b = 0011, cin = 1
+# t =                  161. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0100, b = 0100, cin = 0
+# t =                  162. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0100, b = 0100, cin = 1
+# t =                  163. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0100, b = 0101, cin = 0
+# t =                  164. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0100, b = 0101, cin = 1
+# t =                  165. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0100, b = 0110, cin = 0
+# t =                  166. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0100, b = 0110, cin = 1
+# t =                  167. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0100, b = 0111, cin = 0
+# t =                  168. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0100, b = 0111, cin = 1
+# t =                  169. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0100, b = 1000, cin = 0
+# t =                  170. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0100, b = 1000, cin = 1
+# t =                  171. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0100, b = 1001, cin = 0
+# t =                  172. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0100, b = 1001, cin = 1
+# t =                  173. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0100, b = 1010, cin = 0
+# t =                  174. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0100, b = 1010, cin = 1
+# t =                  175. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0100, b = 1011, cin = 0
+# t =                  176. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0100, b = 1011, cin = 1
+# t =                  177. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0100, b = 1100, cin = 0
+# t =                  178. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0100, b = 1100, cin = 1
+# t =                  179. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0100, b = 1101, cin = 0
+# t =                  180. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0100, b = 1101, cin = 1
+# t =                  181. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0100, b = 1110, cin = 0
+# t =                  182. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0100, b = 1110, cin = 1
+# t =                  183. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 0100, b = 1111, cin = 0
+# t =                  184. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 0100, b = 1111, cin = 1
+# t =                  185. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 0101, b = 0000, cin = 0
+# t =                  186. PASSED. Exp: 00101, Act: 00101
+# 	CASE: a = 0101, b = 0000, cin = 1
+# t =                  187. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0101, b = 0001, cin = 0
+# t =                  188. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0101, b = 0001, cin = 1
+# t =                  189. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0101, b = 0010, cin = 0
+# t =                  190. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0101, b = 0010, cin = 1
+# t =                  191. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0101, b = 0011, cin = 0
+# t =                  192. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0101, b = 0011, cin = 1
+# t =                  193. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0101, b = 0100, cin = 0
+# t =                  194. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0101, b = 0100, cin = 1
+# t =                  195. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0101, b = 0101, cin = 0
+# t =                  196. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0101, b = 0101, cin = 1
+# t =                  197. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0101, b = 0110, cin = 0
+# t =                  198. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0101, b = 0110, cin = 1
+# t =                  199. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0101, b = 0111, cin = 0
+# t =                  200. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0101, b = 0111, cin = 1
+# t =                  201. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0101, b = 1000, cin = 0
+# t =                  202. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0101, b = 1000, cin = 1
+# t =                  203. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0101, b = 1001, cin = 0
+# t =                  204. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0101, b = 1001, cin = 1
+# t =                  205. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0101, b = 1010, cin = 0
+# t =                  206. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0101, b = 1010, cin = 1
+# t =                  207. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0101, b = 1011, cin = 0
+# t =                  208. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0101, b = 1011, cin = 1
+# t =                  209. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0101, b = 1100, cin = 0
+# t =                  210. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0101, b = 1100, cin = 1
+# t =                  211. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0101, b = 1101, cin = 0
+# t =                  212. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0101, b = 1101, cin = 1
+# t =                  213. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 0101, b = 1110, cin = 0
+# t =                  214. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 0101, b = 1110, cin = 1
+# t =                  215. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 0101, b = 1111, cin = 0
+# t =                  216. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 0101, b = 1111, cin = 1
+# t =                  217. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 0110, b = 0000, cin = 0
+# t =                  218. PASSED. Exp: 00110, Act: 00110
+# 	CASE: a = 0110, b = 0000, cin = 1
+# t =                  219. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0110, b = 0001, cin = 0
+# t =                  220. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0110, b = 0001, cin = 1
+# t =                  221. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0110, b = 0010, cin = 0
+# t =                  222. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0110, b = 0010, cin = 1
+# t =                  223. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0110, b = 0011, cin = 0
+# t =                  224. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0110, b = 0011, cin = 1
+# t =                  225. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0110, b = 0100, cin = 0
+# t =                  226. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0110, b = 0100, cin = 1
+# t =                  227. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0110, b = 0101, cin = 0
+# t =                  228. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0110, b = 0101, cin = 1
+# t =                  229. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0110, b = 0110, cin = 0
+# t =                  230. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0110, b = 0110, cin = 1
+# t =                  231. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0110, b = 0111, cin = 0
+# t =                  232. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0110, b = 0111, cin = 1
+# t =                  233. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0110, b = 1000, cin = 0
+# t =                  234. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0110, b = 1000, cin = 1
+# t =                  235. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0110, b = 1001, cin = 0
+# t =                  236. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0110, b = 1001, cin = 1
+# t =                  237. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0110, b = 1010, cin = 0
+# t =                  238. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0110, b = 1010, cin = 1
+# t =                  239. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0110, b = 1011, cin = 0
+# t =                  240. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0110, b = 1011, cin = 1
+# t =                  241. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0110, b = 1100, cin = 0
+# t =                  242. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0110, b = 1100, cin = 1
+# t =                  243. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 0110, b = 1101, cin = 0
+# t =                  244. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 0110, b = 1101, cin = 1
+# t =                  245. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 0110, b = 1110, cin = 0
+# t =                  246. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 0110, b = 1110, cin = 1
+# t =                  247. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 0110, b = 1111, cin = 0
+# t =                  248. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 0110, b = 1111, cin = 1
+# t =                  249. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 0111, b = 0000, cin = 0
+# t =                  250. PASSED. Exp: 00111, Act: 00111
+# 	CASE: a = 0111, b = 0000, cin = 1
+# t =                  251. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0111, b = 0001, cin = 0
+# t =                  252. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 0111, b = 0001, cin = 1
+# t =                  253. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0111, b = 0010, cin = 0
+# t =                  254. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 0111, b = 0010, cin = 1
+# t =                  255. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0111, b = 0011, cin = 0
+# t =                  256. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 0111, b = 0011, cin = 1
+# t =                  257. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0111, b = 0100, cin = 0
+# t =                  258. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 0111, b = 0100, cin = 1
+# t =                  259. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0111, b = 0101, cin = 0
+# t =                  260. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 0111, b = 0101, cin = 1
+# t =                  261. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0111, b = 0110, cin = 0
+# t =                  262. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 0111, b = 0110, cin = 1
+# t =                  263. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0111, b = 0111, cin = 0
+# t =                  264. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 0111, b = 0111, cin = 1
+# t =                  265. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0111, b = 1000, cin = 0
+# t =                  266. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 0111, b = 1000, cin = 1
+# t =                  267. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0111, b = 1001, cin = 0
+# t =                  268. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 0111, b = 1001, cin = 1
+# t =                  269. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0111, b = 1010, cin = 0
+# t =                  270. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 0111, b = 1010, cin = 1
+# t =                  271. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0111, b = 1011, cin = 0
+# t =                  272. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 0111, b = 1011, cin = 1
+# t =                  273. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 0111, b = 1100, cin = 0
+# t =                  274. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 0111, b = 1100, cin = 1
+# t =                  275. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 0111, b = 1101, cin = 0
+# t =                  276. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 0111, b = 1101, cin = 1
+# t =                  277. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 0111, b = 1110, cin = 0
+# t =                  278. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 0111, b = 1110, cin = 1
+# t =                  279. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 0111, b = 1111, cin = 0
+# t =                  280. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 0111, b = 1111, cin = 1
+# t =                  281. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1000, b = 0000, cin = 0
+# t =                  282. PASSED. Exp: 01000, Act: 01000
+# 	CASE: a = 1000, b = 0000, cin = 1
+# t =                  283. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 1000, b = 0001, cin = 0
+# t =                  284. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 1000, b = 0001, cin = 1
+# t =                  285. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 1000, b = 0010, cin = 0
+# t =                  286. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 1000, b = 0010, cin = 1
+# t =                  287. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 1000, b = 0011, cin = 0
+# t =                  288. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 1000, b = 0011, cin = 1
+# t =                  289. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 1000, b = 0100, cin = 0
+# t =                  290. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 1000, b = 0100, cin = 1
+# t =                  291. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1000, b = 0101, cin = 0
+# t =                  292. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1000, b = 0101, cin = 1
+# t =                  293. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1000, b = 0110, cin = 0
+# t =                  294. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1000, b = 0110, cin = 1
+# t =                  295. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1000, b = 0111, cin = 0
+# t =                  296. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1000, b = 0111, cin = 1
+# t =                  297. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1000, b = 1000, cin = 0
+# t =                  298. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1000, b = 1000, cin = 1
+# t =                  299. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1000, b = 1001, cin = 0
+# t =                  300. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1000, b = 1001, cin = 1
+# t =                  301. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1000, b = 1010, cin = 0
+# t =                  302. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1000, b = 1010, cin = 1
+# t =                  303. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1000, b = 1011, cin = 0
+# t =                  304. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1000, b = 1011, cin = 1
+# t =                  305. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1000, b = 1100, cin = 0
+# t =                  306. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1000, b = 1100, cin = 1
+# t =                  307. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1000, b = 1101, cin = 0
+# t =                  308. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1000, b = 1101, cin = 1
+# t =                  309. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1000, b = 1110, cin = 0
+# t =                  310. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1000, b = 1110, cin = 1
+# t =                  311. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1000, b = 1111, cin = 0
+# t =                  312. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1000, b = 1111, cin = 1
+# t =                  313. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1001, b = 0000, cin = 0
+# t =                  314. PASSED. Exp: 01001, Act: 01001
+# 	CASE: a = 1001, b = 0000, cin = 1
+# t =                  315. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 1001, b = 0001, cin = 0
+# t =                  316. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 1001, b = 0001, cin = 1
+# t =                  317. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 1001, b = 0010, cin = 0
+# t =                  318. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 1001, b = 0010, cin = 1
+# t =                  319. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 1001, b = 0011, cin = 0
+# t =                  320. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 1001, b = 0011, cin = 1
+# t =                  321. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1001, b = 0100, cin = 0
+# t =                  322. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1001, b = 0100, cin = 1
+# t =                  323. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1001, b = 0101, cin = 0
+# t =                  324. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1001, b = 0101, cin = 1
+# t =                  325. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1001, b = 0110, cin = 0
+# t =                  326. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1001, b = 0110, cin = 1
+# t =                  327. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1001, b = 0111, cin = 0
+# t =                  328. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1001, b = 0111, cin = 1
+# t =                  329. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1001, b = 1000, cin = 0
+# t =                  330. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1001, b = 1000, cin = 1
+# t =                  331. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1001, b = 1001, cin = 0
+# t =                  332. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1001, b = 1001, cin = 1
+# t =                  333. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1001, b = 1010, cin = 0
+# t =                  334. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1001, b = 1010, cin = 1
+# t =                  335. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1001, b = 1011, cin = 0
+# t =                  336. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1001, b = 1011, cin = 1
+# t =                  337. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1001, b = 1100, cin = 0
+# t =                  338. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1001, b = 1100, cin = 1
+# t =                  339. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1001, b = 1101, cin = 0
+# t =                  340. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1001, b = 1101, cin = 1
+# t =                  341. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1001, b = 1110, cin = 0
+# t =                  342. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1001, b = 1110, cin = 1
+# t =                  343. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1001, b = 1111, cin = 0
+# t =                  344. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1001, b = 1111, cin = 1
+# t =                  345. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1010, b = 0000, cin = 0
+# t =                  346. PASSED. Exp: 01010, Act: 01010
+# 	CASE: a = 1010, b = 0000, cin = 1
+# t =                  347. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 1010, b = 0001, cin = 0
+# t =                  348. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 1010, b = 0001, cin = 1
+# t =                  349. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 1010, b = 0010, cin = 0
+# t =                  350. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 1010, b = 0010, cin = 1
+# t =                  351. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1010, b = 0011, cin = 0
+# t =                  352. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1010, b = 0011, cin = 1
+# t =                  353. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1010, b = 0100, cin = 0
+# t =                  354. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1010, b = 0100, cin = 1
+# t =                  355. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1010, b = 0101, cin = 0
+# t =                  356. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1010, b = 0101, cin = 1
+# t =                  357. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1010, b = 0110, cin = 0
+# t =                  358. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1010, b = 0110, cin = 1
+# t =                  359. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1010, b = 0111, cin = 0
+# t =                  360. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1010, b = 0111, cin = 1
+# t =                  361. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1010, b = 1000, cin = 0
+# t =                  362. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1010, b = 1000, cin = 1
+# t =                  363. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1010, b = 1001, cin = 0
+# t =                  364. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1010, b = 1001, cin = 1
+# t =                  365. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1010, b = 1010, cin = 0
+# t =                  366. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1010, b = 1010, cin = 1
+# t =                  367. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1010, b = 1011, cin = 0
+# t =                  368. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1010, b = 1011, cin = 1
+# t =                  369. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1010, b = 1100, cin = 0
+# t =                  370. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1010, b = 1100, cin = 1
+# t =                  371. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1010, b = 1101, cin = 0
+# t =                  372. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1010, b = 1101, cin = 1
+# t =                  373. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1010, b = 1110, cin = 0
+# t =                  374. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1010, b = 1110, cin = 1
+# t =                  375. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1010, b = 1111, cin = 0
+# t =                  376. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1010, b = 1111, cin = 1
+# t =                  377. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1011, b = 0000, cin = 0
+# t =                  378. PASSED. Exp: 01011, Act: 01011
+# 	CASE: a = 1011, b = 0000, cin = 1
+# t =                  379. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 1011, b = 0001, cin = 0
+# t =                  380. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 1011, b = 0001, cin = 1
+# t =                  381. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1011, b = 0010, cin = 0
+# t =                  382. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1011, b = 0010, cin = 1
+# t =                  383. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1011, b = 0011, cin = 0
+# t =                  384. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1011, b = 0011, cin = 1
+# t =                  385. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1011, b = 0100, cin = 0
+# t =                  386. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1011, b = 0100, cin = 1
+# t =                  387. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1011, b = 0101, cin = 0
+# t =                  388. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1011, b = 0101, cin = 1
+# t =                  389. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1011, b = 0110, cin = 0
+# t =                  390. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1011, b = 0110, cin = 1
+# t =                  391. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1011, b = 0111, cin = 0
+# t =                  392. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1011, b = 0111, cin = 1
+# t =                  393. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1011, b = 1000, cin = 0
+# t =                  394. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1011, b = 1000, cin = 1
+# t =                  395. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1011, b = 1001, cin = 0
+# t =                  396. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1011, b = 1001, cin = 1
+# t =                  397. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1011, b = 1010, cin = 0
+# t =                  398. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1011, b = 1010, cin = 1
+# t =                  399. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1011, b = 1011, cin = 0
+# t =                  400. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1011, b = 1011, cin = 1
+# t =                  401. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1011, b = 1100, cin = 0
+# t =                  402. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1011, b = 1100, cin = 1
+# t =                  403. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1011, b = 1101, cin = 0
+# t =                  404. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1011, b = 1101, cin = 1
+# t =                  405. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1011, b = 1110, cin = 0
+# t =                  406. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1011, b = 1110, cin = 1
+# t =                  407. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1011, b = 1111, cin = 0
+# t =                  408. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1011, b = 1111, cin = 1
+# t =                  409. PASSED. Exp: 11011, Act: 11011
+# 	CASE: a = 1100, b = 0000, cin = 0
+# t =                  410. PASSED. Exp: 01100, Act: 01100
+# 	CASE: a = 1100, b = 0000, cin = 1
+# t =                  411. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1100, b = 0001, cin = 0
+# t =                  412. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1100, b = 0001, cin = 1
+# t =                  413. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1100, b = 0010, cin = 0
+# t =                  414. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1100, b = 0010, cin = 1
+# t =                  415. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1100, b = 0011, cin = 0
+# t =                  416. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1100, b = 0011, cin = 1
+# t =                  417. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1100, b = 0100, cin = 0
+# t =                  418. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1100, b = 0100, cin = 1
+# t =                  419. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1100, b = 0101, cin = 0
+# t =                  420. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1100, b = 0101, cin = 1
+# t =                  421. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1100, b = 0110, cin = 0
+# t =                  422. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1100, b = 0110, cin = 1
+# t =                  423. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1100, b = 0111, cin = 0
+# t =                  424. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1100, b = 0111, cin = 1
+# t =                  425. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1100, b = 1000, cin = 0
+# t =                  426. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1100, b = 1000, cin = 1
+# t =                  427. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1100, b = 1001, cin = 0
+# t =                  428. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1100, b = 1001, cin = 1
+# t =                  429. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1100, b = 1010, cin = 0
+# t =                  430. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1100, b = 1010, cin = 1
+# t =                  431. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1100, b = 1011, cin = 0
+# t =                  432. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1100, b = 1011, cin = 1
+# t =                  433. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1100, b = 1100, cin = 0
+# t =                  434. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1100, b = 1100, cin = 1
+# t =                  435. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1100, b = 1101, cin = 0
+# t =                  436. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1100, b = 1101, cin = 1
+# t =                  437. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1100, b = 1110, cin = 0
+# t =                  438. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1100, b = 1110, cin = 1
+# t =                  439. PASSED. Exp: 11011, Act: 11011
+# 	CASE: a = 1100, b = 1111, cin = 0
+# t =                  440. PASSED. Exp: 11011, Act: 11011
+# 	CASE: a = 1100, b = 1111, cin = 1
+# t =                  441. PASSED. Exp: 11100, Act: 11100
+# 	CASE: a = 1101, b = 0000, cin = 0
+# t =                  442. PASSED. Exp: 01101, Act: 01101
+# 	CASE: a = 1101, b = 0000, cin = 1
+# t =                  443. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1101, b = 0001, cin = 0
+# t =                  444. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1101, b = 0001, cin = 1
+# t =                  445. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1101, b = 0010, cin = 0
+# t =                  446. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1101, b = 0010, cin = 1
+# t =                  447. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1101, b = 0011, cin = 0
+# t =                  448. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1101, b = 0011, cin = 1
+# t =                  449. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1101, b = 0100, cin = 0
+# t =                  450. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1101, b = 0100, cin = 1
+# t =                  451. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1101, b = 0101, cin = 0
+# t =                  452. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1101, b = 0101, cin = 1
+# t =                  453. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1101, b = 0110, cin = 0
+# t =                  454. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1101, b = 0110, cin = 1
+# t =                  455. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1101, b = 0111, cin = 0
+# t =                  456. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1101, b = 0111, cin = 1
+# t =                  457. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1101, b = 1000, cin = 0
+# t =                  458. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1101, b = 1000, cin = 1
+# t =                  459. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1101, b = 1001, cin = 0
+# t =                  460. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1101, b = 1001, cin = 1
+# t =                  461. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1101, b = 1010, cin = 0
+# t =                  462. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1101, b = 1010, cin = 1
+# t =                  463. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1101, b = 1011, cin = 0
+# t =                  464. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1101, b = 1011, cin = 1
+# t =                  465. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1101, b = 1100, cin = 0
+# t =                  466. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1101, b = 1100, cin = 1
+# t =                  467. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1101, b = 1101, cin = 0
+# t =                  468. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1101, b = 1101, cin = 1
+# t =                  469. PASSED. Exp: 11011, Act: 11011
+# 	CASE: a = 1101, b = 1110, cin = 0
+# t =                  470. PASSED. Exp: 11011, Act: 11011
+# 	CASE: a = 1101, b = 1110, cin = 1
+# t =                  471. PASSED. Exp: 11100, Act: 11100
+# 	CASE: a = 1101, b = 1111, cin = 0
+# t =                  472. PASSED. Exp: 11100, Act: 11100
+# 	CASE: a = 1101, b = 1111, cin = 1
+# t =                  473. PASSED. Exp: 11101, Act: 11101
+# 	CASE: a = 1110, b = 0000, cin = 0
+# t =                  474. PASSED. Exp: 01110, Act: 01110
+# 	CASE: a = 1110, b = 0000, cin = 1
+# t =                  475. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1110, b = 0001, cin = 0
+# t =                  476. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1110, b = 0001, cin = 1
+# t =                  477. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1110, b = 0010, cin = 0
+# t =                  478. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1110, b = 0010, cin = 1
+# t =                  479. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1110, b = 0011, cin = 0
+# t =                  480. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1110, b = 0011, cin = 1
+# t =                  481. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1110, b = 0100, cin = 0
+# t =                  482. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1110, b = 0100, cin = 1
+# t =                  483. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1110, b = 0101, cin = 0
+# t =                  484. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1110, b = 0101, cin = 1
+# t =                  485. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1110, b = 0110, cin = 0
+# t =                  486. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1110, b = 0110, cin = 1
+# t =                  487. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1110, b = 0111, cin = 0
+# t =                  488. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1110, b = 0111, cin = 1
+# t =                  489. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1110, b = 1000, cin = 0
+# t =                  490. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1110, b = 1000, cin = 1
+# t =                  491. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1110, b = 1001, cin = 0
+# t =                  492. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1110, b = 1001, cin = 1
+# t =                  493. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1110, b = 1010, cin = 0
+# t =                  494. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1110, b = 1010, cin = 1
+# t =                  495. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1110, b = 1011, cin = 0
+# t =                  496. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1110, b = 1011, cin = 1
+# t =                  497. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1110, b = 1100, cin = 0
+# t =                  498. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1110, b = 1100, cin = 1
+# t =                  499. PASSED. Exp: 11011, Act: 11011
+# 	CASE: a = 1110, b = 1101, cin = 0
+# t =                  500. PASSED. Exp: 11011, Act: 11011
+# 	CASE: a = 1110, b = 1101, cin = 1
+# t =                  501. PASSED. Exp: 11100, Act: 11100
+# 	CASE: a = 1110, b = 1110, cin = 0
+# t =                  502. PASSED. Exp: 11100, Act: 11100
+# 	CASE: a = 1110, b = 1110, cin = 1
+# t =                  503. PASSED. Exp: 11101, Act: 11101
+# 	CASE: a = 1110, b = 1111, cin = 0
+# t =                  504. PASSED. Exp: 11101, Act: 11101
+# 	CASE: a = 1110, b = 1111, cin = 1
+# t =                  505. PASSED. Exp: 11110, Act: 11110
+# 	CASE: a = 1111, b = 0000, cin = 0
+# t =                  506. PASSED. Exp: 01111, Act: 01111
+# 	CASE: a = 1111, b = 0000, cin = 1
+# t =                  507. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1111, b = 0001, cin = 0
+# t =                  508. PASSED. Exp: 10000, Act: 10000
+# 	CASE: a = 1111, b = 0001, cin = 1
+# t =                  509. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1111, b = 0010, cin = 0
+# t =                  510. PASSED. Exp: 10001, Act: 10001
+# 	CASE: a = 1111, b = 0010, cin = 1
+# t =                  511. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1111, b = 0011, cin = 0
+# t =                  512. PASSED. Exp: 10010, Act: 10010
+# 	CASE: a = 1111, b = 0011, cin = 1
+# t =                  513. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1111, b = 0100, cin = 0
+# t =                  514. PASSED. Exp: 10011, Act: 10011
+# 	CASE: a = 1111, b = 0100, cin = 1
+# t =                  515. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1111, b = 0101, cin = 0
+# t =                  516. PASSED. Exp: 10100, Act: 10100
+# 	CASE: a = 1111, b = 0101, cin = 1
+# t =                  517. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1111, b = 0110, cin = 0
+# t =                  518. PASSED. Exp: 10101, Act: 10101
+# 	CASE: a = 1111, b = 0110, cin = 1
+# t =                  519. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1111, b = 0111, cin = 0
+# t =                  520. PASSED. Exp: 10110, Act: 10110
+# 	CASE: a = 1111, b = 0111, cin = 1
+# t =                  521. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1111, b = 1000, cin = 0
+# t =                  522. PASSED. Exp: 10111, Act: 10111
+# 	CASE: a = 1111, b = 1000, cin = 1
+# t =                  523. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1111, b = 1001, cin = 0
+# t =                  524. PASSED. Exp: 11000, Act: 11000
+# 	CASE: a = 1111, b = 1001, cin = 1
+# t =                  525. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1111, b = 1010, cin = 0
+# t =                  526. PASSED. Exp: 11001, Act: 11001
+# 	CASE: a = 1111, b = 1010, cin = 1
+# t =                  527. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1111, b = 1011, cin = 0
+# t =                  528. PASSED. Exp: 11010, Act: 11010
+# 	CASE: a = 1111, b = 1011, cin = 1
+# t =                  529. PASSED. Exp: 11011, Act: 11011
+# 	CASE: a = 1111, b = 1100, cin = 0
+# t =                  530. PASSED. Exp: 11011, Act: 11011
+# 	CASE: a = 1111, b = 1100, cin = 1
+# t =                  531. PASSED. Exp: 11100, Act: 11100
+# 	CASE: a = 1111, b = 1101, cin = 0
+# t =                  532. PASSED. Exp: 11100, Act: 11100
+# 	CASE: a = 1111, b = 1101, cin = 1
+# t =                  533. PASSED. Exp: 11101, Act: 11101
+# 	CASE: a = 1111, b = 1110, cin = 0
+# t =                  534. PASSED. Exp: 11101, Act: 11101
+# 	CASE: a = 1111, b = 1110, cin = 1
+# t =                  535. PASSED. Exp: 11110, Act: 11110
+# 	CASE: a = 1111, b = 1111, cin = 0
+# t =                  536. PASSED. Exp: 11110, Act: 11110
+# 	CASE: a = 1111, b = 1111, cin = 1
+# t =                  537. PASSED. Exp: 11111, Act: 11111
+# 	CASE: a = 0000, b = 0000, cin = 0
+# t =                  538. PASSED. Exp: 00000, Act: 00000
+# ----------------------------------------------------------------------------------------------------------------------
+# Test result PASSED
+# ** Note: $finish    : ../tb/test_bench.v(19)
+#    Time: 638 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 15:19:00 on Mar 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
