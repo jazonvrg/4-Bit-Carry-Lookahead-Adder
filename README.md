@@ -14,7 +14,7 @@ A 4-bit Carry Lookahead Adder (CLA) built from scratch using dataflow and struct
 
 Here's what makes this CLA block superior to a standard RCA:
 * **$O(1)$ Propagation Delay:** Instead of waiting for the carry to ripple through each bit, this architecture computes all carry signals ($C_1$ to $C_4$) simultaneously in a single logic level.
-* **P/G Generation:** Implements parallel `Generate` ($G_i = a_i \ \& \ b_i$) and `Propagate` ($P_i = a_i \oplus b_i$) signals for each bit.
+* **P/G Generation:** Implements parallel `Generate` ($G_i = a_i \cdot b_i$) and `Propagate` ($P_i = a_i \oplus b_i$) signals for each bit.
 * **Lookahead Logic (The "Brain"):** Utilizes complex Boolean algebra and algebraic substitution to anticipate carry bits based solely on $P$, $G$, and the initial $C_{in}$, completely eliminating the serial dependency.
 * **Seamless I/O Compatibility:** Designed with the exact same port interface as an RCA, allowing for 100% testbench reusability.
 
