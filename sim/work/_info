@@ -31,6 +31,16 @@ R0
 R1
 R2
 R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R2
+R1
 R2
 R1
 R2
@@ -96,10 +106,10 @@ R1
 cModel Technology
 Z3 d/ictc/student_data/vannghia_1108/projects/4_bit_ripple_carry_adder/sim
 T_opt1
-!s110 1774275517
-V67D2iL6gM@k?jfhKRmZfc0
+!s110 1774281380
+V5iZn@5@LGILd]V96XiC<B2
 Z4 04 10 4 work test_bench fast 0
-=1-bc2411209e67-69c14bbc-e46f8-11e04
+=1-bc2411209e67-69c162a3-c7c84-13455
 R1
 Z5 !s12f OEM100
 Z6 !s12b OEM100
@@ -111,10 +121,10 @@ n@_opt1
 Z10 OL;O;2024.3;79
 R3
 T_opt2
-!s110 1774275570
-V@e<M[M12500]7IzVGdQ:V3
+!s110 1774281393
+V=0a:WP`Jjf]4:z18JSS?H2
 R4
-=1-bc2411209e67-69c14bf1-d856f-14404
+=1-bc2411209e67-69c162b1-a7b56-13f3d
 R1
 R5
 R6
@@ -125,24 +135,24 @@ R9
 n@_opt2
 R10
 vcla_4bit
-Z11 2../rtl/cla_4bit.v|../tb/test_bench.v
-Z12 !s110 1774275568
+Z11 2../rtl/cla_4bit.v|../rtl/pg_generator.v|../rtl/lookahead_logic.v|../rtl/sum_logic.v|../tb/test_bench.v
+Z12 !s110 1774281392
 !i10b 1
-!s100 AmCj`LBKcC:Sh82:4CV371
-I_2ThDAE6b9;ZYnFTd1b<S0
+!s100 E`W5;:DeoQ0[4G3>FoTSY3
+II842NMPXnPQbXU2YZzUM01
 Z13 d/ictc/student_data/vannghia_1108/projects/4_bit_carry_lookahead_adder/sim
-w1774275430
+w1774281367
 8../rtl/cla_4bit.v
 F../rtl/cla_4bit.v
-!i122 44
-L0 1 36
+!i122 49
+L0 1 34
 Z14 VDg1SIo80bB@j0V0VzS_@n1
 Z15 OL;L;2024.3;79
 r1
 !s85 0
 31
-Z16 !s108 1774275568.000000
-Z17 !s107 run_test.v|../tb/test_bench.v|../rtl/cla_4bit.v|
+Z16 !s108 1774281392.000000
+Z17 !s107 run_test.v|../tb/test_bench.v|../rtl/sum_logic.v|../rtl/lookahead_logic.v|../rtl/pg_generator.v|../rtl/cla_4bit.v|
 Z18 !s90 +cover=bcesft|-f|compile.f|
 !i113 0
 Z19 !s102 +cover=bcesft
@@ -172,6 +182,54 @@ R18
 R19
 R20
 R9
+vlookahead_logic
+R11
+R12
+!i10b 1
+!s100 [8VEMU`hC3dP>NQmgheml0
+IXG9^T:MPKF]oIZ;`gTkk`0
+R13
+w1774281316
+8../rtl/lookahead_logic.v
+F../rtl/lookahead_logic.v
+!i122 49
+L0 1 24
+R14
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 0
+R19
+R20
+R9
+vpg_generator
+R11
+R12
+!i10b 1
+!s100 RmlnPfk1d7Hk[i>hIE@Rm2
+Id0<5KchYmiii^I6^Q8TIm2
+R13
+w1774280373
+8../rtl/pg_generator.v
+F../rtl/pg_generator.v
+!i122 49
+L0 1 20
+R14
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 0
+R19
+R20
+R9
 vrca_4bit
 R21
 R22
@@ -196,6 +254,30 @@ R18
 R19
 R20
 R9
+vsum_logic
+R11
+R12
+!i10b 1
+!s100 agJSRIFOM4k>L3J2AV?zG1
+IG_bb[Jlc=?X1RZV[PPGce0
+R13
+w1774280332
+8../rtl/sum_logic.v
+F../rtl/sum_logic.v
+!i122 49
+L0 1 16
+R14
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 0
+R19
+R20
+R9
 vtest_bench
 R11
 R12
@@ -203,11 +285,11 @@ R12
 !s100 GSf[DlkLJL`ZI83_b]OfU2
 ICl[iG5^`kYFaN>Pm28JW^3
 R13
-w1774275568
+w1774281392
 8../tb/test_bench.v
 F../tb/test_bench.v
 Frun_test.v
-!i122 44
+!i122 49
 L0 1 70
 R14
 R15

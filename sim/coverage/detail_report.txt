@@ -17,23 +17,23 @@ Branch Coverage for instance /test_bench
     ----         ----                      -----     ------ 
   File ../tb/test_bench.v
 ------------------------------------IF Branch------------------------------------
-    26                                      2579     Count coming in to IF
-    26              1                       2579     			if (data == cp) begin
+    26                                      3095     Count coming in to IF
+    26              1                       3095     			if (data == cp) begin
     29              1                    ***0***     			else begin
 Branch totals: 1 hit of 2 branches = 50.00%
 
 
   File run_test.v
 ------------------------------------IF Branch------------------------------------
-    16                                         5     Count coming in to IF
+    16                                         6     Count coming in to IF
     16              1                    ***0***     					#1;		
-    18              1                          5     					comp({cout, sum}, a + b + cin);
+    18              1                          6     					comp({cout, sum}, a + b + cin);
 Branch totals: 1 hit of 2 branches = 50.00%
 
 ------------------------------------IF Branch------------------------------------
-    17                                        10     Count coming in to IF
+    17                                        12     Count coming in to IF
     17              1                    ***0***     					$display("	CASE: a = %b, b = %b, cin = %b", a, b, cin);
-    19              1                         10     				end
+    19              1                         12     				end
 Branch totals: 1 hit of 2 branches = 50.00%
 
 ------------------------------------IF Branch------------------------------------
@@ -43,9 +43,9 @@ Branch totals: 1 hit of 2 branches = 50.00%
 Branch totals: 1 hit of 2 branches = 50.00%
 
 ------------------------------------IF Branch------------------------------------
-    29                                         4     Count coming in to IF
+    29                                         5     Count coming in to IF
     29              1                    ***0***             	if (err != 0)
-    31              1                          4      	       	else
+    31              1                          5      	       	else
 Branch totals: 1 hit of 2 branches = 50.00%
 
 
@@ -70,7 +70,7 @@ Condition totals: 0 of 1 input term covered = 0.00%
      Rows:       Hits  FEC Target            Non-masking condition(s)      
  ---------  ---------  --------------------  -------------------------     
   Row   1:    ***0***  (data == cp)_0        -                             
-  Row   2:         20  (data == cp)_1        -                             
+  Row   2:         24  (data == cp)_1        -                             
 
 
 ----------------Focused Condition View-------------------
@@ -83,7 +83,7 @@ Condition totals: 0 of 1 input term covered = 0.00%
 
      Rows:       Hits  FEC Target            Non-masking condition(s)      
  ---------  ---------  --------------------  -------------------------     
-  Row   1:          5  (err != 0)_0          -                             
+  Row   1:          6  (err != 0)_0          -                             
   Row   2:    ***0***  (err != 0)_1          -                             
 
 ----------------Focused Condition View-------------------
@@ -96,7 +96,7 @@ Condition totals: 0 of 1 input term covered = 0.00%
 
      Rows:       Hits  FEC Target            Non-masking condition(s)      
  ---------  ---------  --------------------  -------------------------     
-  Row   1:         10  (err != 0)_0          -                             
+  Row   1:         12  (err != 0)_0          -                             
   Row   2:    ***0***  (err != 0)_1          -                             
 
 ----------------Focused Condition View-------------------
@@ -122,7 +122,7 @@ Condition totals: 0 of 1 input term covered = 0.00%
 
      Rows:       Hits  FEC Target            Non-masking condition(s)      
  ---------  ---------  --------------------  -------------------------     
-  Row   1:          4  (err != 0)_0          -                             
+  Row   1:          5  (err != 0)_0          -                             
   Row   2:    ***0***  (err != 0)_1          -                             
 
 
@@ -153,22 +153,22 @@ Toggle Coverage for instance /test_bench --
 
                                               Node      1H->0L      0L->1H  "Coverage"
                                               ---------------------------------------
-                                            a[0-2]           5           5      100.00 
-                                              a[3]           4           5      100.00 
-                                            b[0-3]           5           5      100.00 
-                                               cin           5           5      100.00 
-                                              cout           5           5      100.00 
+                                            a[0-2]           6           6      100.00 
+                                              a[3]           5           6      100.00 
+                                            b[0-3]           6           6      100.00 
+                                               cin           6           6      100.00 
+                                              cout           6           6      100.00 
                                          err[0-31]           0           0        0.00 
-                                            i[0-3]           5           5      100.00 
-                                              i[4]           0           5       50.00 
+                                            i[0-3]           6           6      100.00 
+                                              i[4]           0           6       50.00 
                                            i[5-31]           0           0        0.00 
-                                            j[0-3]           5           5      100.00 
-                                              j[4]           0           5       50.00 
+                                            j[0-3]           6           6      100.00 
+                                              j[4]           0           6       50.00 
                                            j[5-31]           0           0        0.00 
-                                              k[0]           5           5      100.00 
-                                              k[1]           0           5       50.00 
+                                              k[0]           6           6      100.00 
+                                              k[1]           0           6       50.00 
                                            k[2-31]           0           0        0.00 
-                                          sum[0-3]           5           5      100.00 
+                                          sum[0-3]           6           6      100.00 
 
 Total Node Count     =        142 
 Toggled Node Count   =         23 
