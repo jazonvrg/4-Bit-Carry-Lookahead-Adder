@@ -7,30 +7,28 @@ module cla_4bit(
 );
 
 	/* verilator lint_off UNOPTFLAT */
-	wire [4:0] c;
+	wire [3:0] c, g, p;
 	/* verilator lint_on UNOPTFLAT */
 
-	wire [3:0] g, p;
+	pg_generator pg_top(
+		.a (a),
+		.b (b),
+		.p (p),
+		.g (g)
+	);
 
-	assign c[0] = cin;
-	assign cout = c[4];
+	lookahead_logic lookahead_top(
+		.p    (p),
+		.g    (g),
+		.cin  (cin),
+		.c    (c),
+		.cout (cout)
+	);
 
-	genvar i;
-
-	generate
-		for(i = 0; i < 4; i = i + 1) begin: gen_loop
-			// Generate (G)
-			assign g[i] = a[i] & b[i];
-	
-			// Propagate (P)
-			assign p[i] = a[i] ^ b[i];
-
-			// Lookahead Carry Logic
-			assign c[i + 1] = g[i] | (p[i] & c[i]);
-
-			// Sum
-			assign sum[i] = p[i] ^ c[i];
-		end
-	endgenerate
+	sum_logic sum_top(
+		.p   (p),
+		.c   (c),
+		.sum (sum)
+	);
 
 endmodule
