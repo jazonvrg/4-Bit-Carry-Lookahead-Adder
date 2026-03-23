@@ -42,7 +42,7 @@ The 4-bit CLA is designed with the following port interfaces and functional cons
 
 **3. Architecture Block Diagram:**
 <p align="center">
-  <img src="./images/4-Bit-Carry-Lookahead-Adder.drawio.png " alt="CLA Architecture Block Diagram">
+  <img src=" " alt="CLA Architecture Block Diagram">
 </p>
 
 ### 🦉 The Process
