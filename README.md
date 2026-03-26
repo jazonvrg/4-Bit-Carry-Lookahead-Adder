@@ -53,7 +53,7 @@ To implement the fast parallel carry architecture shown above, the design is hie
     * **Implementation:** Built using simple bitwise logic: $P_i = a_i \oplus b_i$ and $G_i = a_i \cdot b_i$. 
 * **Sub-Module 2: Lookahead Logic (`lookahead_logic`)**
     * **Role:** The "Brain" of the CLA. It takes the $P$, $G$, and $cin$ signals to anticipate and calculate all internal carry bits ($C_1, C_2, C_3$) and the final $C_{out}$ in parallel, completely breaking the ripple dependency.
-    * **Implementation:** Implemented using complex, unrolled Boolean equations ($C_{i+1} = G_i + (P_i \cdot C_i)$) modeled with continuous assignments.
+    * **Implementation:** Implemented using complex, unrolled Boolean equations $C_{i+1} = G_i + (P_i \cdot C_i)$ modeled with continuous assignments.
 * **Sub-Module 3: Sum Logic (`sum_logic`)**
     * **Role:** The final stage of the computation. It calculates the resulting sum bits.
     * **Implementation:** Simply XORs the Propagate signals with the pre-calculated Carry signals from the Lookahead block: $S_i = P_i \oplus C_i$.
