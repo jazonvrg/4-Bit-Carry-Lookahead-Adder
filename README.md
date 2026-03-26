@@ -45,6 +45,22 @@ The 4-bit CLA is designed with the following port interfaces and functional cons
   <img src="./images/4-Bit-Carry-Lookahead-Adder.drawio.png" alt="CLA Architecture Block Diagram">
 </p>
 
+**4. Module Descriptions:**
+
+To implement the fast parallel carry architecture shown above, the design is hierarchically partitioned into three dedicated sub-modules and one top-level wrapper:
+* **Sub-Module 1: P/G Generator (`pg_generator`)**
+    * **Role:** The first stage of the dataflow. It computes the Propagate ($P$) and Generate ($G$) signals for all 4 bits simultaneously.
+    * **Implementation:** Built using simple bitwise logic: $P_i = a_i \oplus b_i$ and $G_i = a_i \cdot b_i$. 
+* **Sub-Module 2: Lookahead Logic (`lookahead_logic`)**
+    * **Role:** The "Brain" of the CLA. It takes the $P$, $G$, and $cin$ signals to anticipate and calculate all internal carry bits ($C_1, C_2, C_3$) and the final $C_{out}$ in parallel, completely breaking the ripple dependency.
+    * **Implementation:** Implemented using complex, unrolled Boolean equations ($C_{i+1} = G_i + (P_i \cdot C_i)$) modeled with continuous assignments.
+* **Sub-Module 3: Sum Logic (`sum_logic`)**
+    * **Role:** The final stage of the computation. It calculates the resulting sum bits.
+    * **Implementation:** Simply XORs the Propagate signals with the pre-calculated Carry signals from the Lookahead block: $S_i = P_i \oplus C_i$.
+* **Top Module: 4-Bit CLA Top (`cla_4bit`)**
+    * **Role:** The structural wrapper (Motherboard) that stitches the three stages together.
+    * **Implementation:** Contains no logic equations itself. It only declares the internal buses (`p[3:0]`, `g[3:0]`, `c[3:0]`) and routes the dataflow strictly from top to bottom (Inputs $\rightarrow$ P/G Generator $\rightarrow$ Lookahead Logic $\rightarrow$ Sum Logic $\rightarrow$ Outputs).
+
 ### 🦉 The Process
 
 I started by designing the hardware architecture, breaking the CLA down into three distinct tiers: the **P/G Generator**, the **Carry Lookahead Logic (CLG)**, and the **Sum Logic**. 
